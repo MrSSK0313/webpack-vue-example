@@ -9,15 +9,6 @@ const setEnv = require('./plugins/setEnv')
 const webpack = require('webpack'); // 访问内置的插件
 const path = require('path');
 const fs=require("fs");
-
-// 还需要的配置项包含
-// 1.loader还差静态文件的打包，（图片、字体文件、音频视频）
-// 2.pwa离线存储
-// 3.vue和react的编译打包
-// 4.chunks提取公共文件
-// 5. tree shaking  
-
-
 const config = {
     entry: {
         index: './src/main.js'
@@ -126,24 +117,13 @@ const config = {
                 }
             },
 
-            // // 自定义的loader
-            // {
-            //     test: /\.(js|jsx)$/,
-            //     use: 'replace-loader',
-            // },
 
         ],
-    },
-    // // 配置自定义loader
-    resolveLoader: {
-        modules: ['./node_modules', './loader'] // 配置loader的查找目录
     },
     resolve: {
         // 设置别名
         alias: {
-            // '@/babel': path.resolve(__dirname,'./node_modules/@babel'),
-            // 'core-js': path.resolve(__dirname,'./node_modules/core-js'),
-            '@/utils':path.resolve(__dirname,'./src/utils')
+            // '@/utils':path.resolve(__dirname,'./src/utils')
         }
     },
     plugins: [
