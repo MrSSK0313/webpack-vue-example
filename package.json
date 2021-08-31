@@ -1,0 +1,58 @@
+{
+  "name": "webpack-vue-example",
+  "version": "1.0.0",
+  "description": "用webpack搭建vue脚手架",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "cross-env NODE_ENV=development webpack server --config webpack.dev.js ",
+    "build": "cross-env NODE_ENV=production webpack --config webpack.prod.js "
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitee.com/MrSSK/webpack-vue-example.git"
+  },
+  "author": "sk",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.14.8",
+    "@babel/plugin-transform-runtime": "^7.14.5",
+    "@babel/preset-env": "^7.14.9",
+    "@babel/runtime": "^7.14.8",
+    "@babel/runtime-corejs3": "^7.14.9",
+    "autoprefixer": "^10.3.1",
+    "axios": "^0.21.1",
+    "babel-loader": "^8.2.2",
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
+    "compression-webpack-plugin": "^8.0.1",
+    "core-js": "^3.16.0",
+    "css-loader": "^6.2.0",
+    "css-minimizer-webpack-plugin": "^3.0.2",
+    "file-loader": "^6.2.0",
+    "html-loader": "^2.1.2",
+    "html-minimizer-webpack-plugin": "^3.1.1",
+    "html-webpack-plugin": "^5.3.2",
+    "less": "^4.1.1",
+    "less-loader": "^10.0.1",
+    "mini-css-extract-plugin": "^2.2.0",
+    "postcss-loader": "^6.1.1",
+    "postcss-preset-env": "^6.7.0",
+    "regenerator-runtime": "^0.13.9",
+    "sass": "^1.37.5",
+    "sass-loader": "^12.1.0",
+    "style-loader": "^3.2.1",
+    "url-loader": "^4.1.1",
+    "vue": "^2.6.14",
+    "vue-loader": "^15.9.8",
+    "vue-router": "^3.5.2",
+    "vue-style-loader": "^4.1.3",
+    "vue-template-compiler": "^2.6.14",
+    "vuex": "^3.6.2",
+    "webpack": "^5.48.0",
+    "webpack-bundle-analyzer": "^4.4.2"
+  },
+  "devDependencies": {
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
